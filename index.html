@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>digital clock </title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inspiration&family=Orbitron&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1> Digital clock via using java script</h1>
+
+    <section class="container">
+        <div class="firstlook">
+            <h2>digital_clock</h2>
+            <hr>
+
+            <div class="time"><span id="num-hour"></span><br><span>hr </span></div>
+            <div class="colon">
+                <h1>:</h1>
+            </div>
+            <div class="time"><span id="num-min"></span><br><span>min</span></div>
+            <div class="colon">
+                <h1>:</h1>
+            </div>
+            <div class="time"><span id="num-sec"></span><br><span>sec</span> </div>
+            <div id="timeview" class="time-view"></div>
+
+        </div>
+
+
+        <div id="stopwatch" class="firstlook stoplook">
+            <h2>stop_watch</h2>
+            <hr>
+            <div class="time"><span id="min">00</span>
+                <br><span>min</span>
+            </div>
+            <div class="colon">
+                <h1>:</h1>
+            </div>
+            <div class="time"><span id="sec">00</span>
+                <br>
+                <span>sec</span>
+            </div>
+            <div class="colon">
+                <h1>:</h1>
+            </div>
+            <div class="time"><span id="ms">0000</span>
+                <br>
+                <span> ms </span>
+            </div>
+            <br>
+            <button id="start" onclick="start()">start</button>
+            <button id="stop" onclick="stop()">stop</button>
+            <button onclick="reset()">reset</button>
+
+
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>
