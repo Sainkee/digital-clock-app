@@ -1,12 +1,12 @@
 body {
     margin: 0%;
     padding: 0%;
-    /* box-sizing: border-box; */
+     box-sizing: border-box; 
     overflow: hidden;
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-color:whitesmoke;
+    background-color:#D6E4E5;
 }
 
 .container {
@@ -33,10 +33,13 @@ h1,
 h2 {
     text-align: center;
     font-family: 'Orbitron', sans-serif;
+     padding:3em auto;
+    text-align:center;
 }
 
 .h2 {
     margin-top: none;
+   
 }
 
 
@@ -51,6 +54,7 @@ h2 {
     padding: 20px;
     justify-content: center;
     border-radius: 5px;
+    margin:2em;
 
 
 
@@ -64,7 +68,7 @@ h2 {
     position: relative;
     display: inline-block;
 
-    margin-left: 100px;
+    
 
 }
 
