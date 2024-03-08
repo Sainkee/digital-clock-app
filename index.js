@@ -10,7 +10,7 @@ function updateCurrentTime() {
   let minut = document.getElementById("num-min");
   let hours = document.getElementById("num-hour");
   let Ampm = document.getElementById("timeview");
-  let ampm = hour >= 12 ? 'pm' : 'am';
+  let ampm = hour >= 12 ? "pm" : "am";
   hour = hour % 12;
   hour = hour ? hour : 12;
   Ampm.innerHTML = ampm;
@@ -19,10 +19,6 @@ function updateCurrentTime() {
   hours.innerHTML = hour < 10 ? "0" + hour : hour;
 }
 
-
-
-
-
 var valms = 0;
 var valsec = 0;
 var valmin = 0;
@@ -30,12 +26,14 @@ var stopwatchTimer;
 var isStopwatchOn = false;
 
 function start() {
-  if (isStopwatchOn) { return }
+  if (isStopwatchOn) {
+    return;
+  }
   let ms = document.getElementById("ms");
   let sec = document.getElementById("sec");
   let min = document.getElementById("min");
 
-  stopwatchTimer = setInterval(function(){
+  stopwatchTimer = setInterval(function () {
     valms++;
     updateStopwatch();
   }, 10);
@@ -46,7 +44,7 @@ function start() {
 
 function stop() {
   if (!isStopwatchOn) {
-    return
+    return;
   } else {
     clearInterval(stopwatchTimer);
     isStopwatchOn = false;
@@ -69,8 +67,7 @@ function updateStopwatch() {
   min.innerHTML = valmin < 9 ? "0" + valmin : valmin;
 }
 
-
-function reset(){
+function reset() {
   stop();
   valms = 0;
   valmin = 0;

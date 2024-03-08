@@ -1,95 +1,86 @@
 body {
-    margin: 0%;
-    padding: 0%;
-     box-sizing: border-box; 
-    overflow: hidden;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    background-color:#D6E4E5;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  text-align: center;
+  /* background-color: #d6e4e5; */
+  background-color: black;
 }
 
 .container {
-    background-color: lightblue;
-    display: inline-block;
-    justify-content: center;
-    position: relative;
-    padding: 50px;
-
-    
-    backdrop-filter: blur(10px);
-
-
-
+  /* background-color: lightblue; */
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  gap: 100px;
+  backdrop-filter: blur(10px);
+  margin-top: 2em;
 }
 
 hr {
-
-    border-top: none;
-    border-width: 2px;
+  border-top: none;
+  border-width: 2px;
 }
 
 h1,
 h2 {
-    text-align: center;
-    font-family: 'Orbitron', sans-serif;
-     padding:3em auto;
-    text-align:center;
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+
+  text-align: center;
+  color: white;
 }
 
 .h2 {
-    margin-top: none;
-   
+  margin-top: none;
 }
-
 
 .firstlook {
-    font-family: 'Orbitron', sans-serif;
-    align-items: center;
-    position: relative;
-
-    background-color: black;
-    color: beige;
-    display: inline-block;
-    padding: 20px;
-    justify-content: center;
-    border-radius: 5px;
-    margin:0em 2em;
-
-
-
-}
-
-.firstlook:hover {
-    box-shadow: 5px 5px 30px white;
-}
-
-.stoplook {
-    position: relative;
-    display: inline-block;
-
-    
-
+  font-family: "Orbitron", sans-serif;
+  align-items: center;
+  background-color: black;
+  color: beige;
+  padding: 1em;
+  border-radius: 5px;
+  margin-top: 2em;
+  border: 1px solid wheat;
 }
 
 .time {
-    display: inline-block;
-    justify-items: center;
-    text-align: center;
-    background-color: rgb(20, 21, 21);
-    padding: 8px;
-
+  display: inline-block;
+  justify-items: center;
+  text-align: center;
+  background-color: rgb(20, 21, 21);
+  padding: 8px;
 }
 
 .time-view {
-    display: inline-block;
-    justify-items: center;
-    text-align: center;
-    background-color: black;
-    border-radius: 5px;
-    padding: 5px;
+  display: inline-block;
+  justify-items: center;
+  text-align: center;
+  background-color: black;
+  border-radius: 5px;
+  padding: 5px;
 }
 
-.colon {
-    display: inline-block;
+button {
+  cursor: pointer;
+}
+
+.data {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 678px) {
+  .container {
+    flex-direction: column;
+    gap: 1em;
+  }
+  .firstlook {
+    max-width: 250px;
+    justify-content: center;
+    text-align: center;
+    margin: 0% auto;
+  }
 }
