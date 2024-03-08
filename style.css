@@ -84,3 +84,34 @@ button {
     margin: 0% auto;
   }
 }
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 2%;
+  }
+
+  .firstlook {
+    padding: 5%;
+  }
+
+  h1,
+  h2 {
+    padding: 1em auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 1%;
+  }
+
+  .firstlook {
+    padding: 3%;
+  }
+
+  h1,
+  h2 {
+    padding: 0.5em auto;
+  }
+}
