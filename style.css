@@ -15,7 +15,7 @@ body {
   padding: 1em;
   gap: 100px;
   backdrop-filter: blur(10px);
-  margin-top: 2em;
+  /* margin-top: 2e0m; */
 }
 
 hr {
@@ -51,7 +51,7 @@ h2 {
   display: inline-block;
   justify-items: center;
   text-align: center;
-  background-color: rgb(20, 21, 21);
+  /* background-color: rgb(20, 21, 21); */
   padding: 8px;
 }
 
@@ -66,12 +66,26 @@ h2 {
 
 button {
   cursor: pointer;
+  margin: 0 0.5em;
+  border-radius: 4px;
+}
+button:hover {
+  transform: scale(1.2);
+  background-color: rgba(255, 255, 255, 0.893);
 }
 
 .data {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
+.colon {
+  transform: translateY(-0.5em);
+}
+.time-view {
+  transform: translateY(0.5em);
+}
+
 @media screen and (max-width: 678px) {
   .container {
     flex-direction: column;
@@ -82,36 +96,5 @@ button {
     justify-content: center;
     text-align: center;
     margin: 0% auto;
-  }
-}
-
-/* Media Queries */
-@media screen and (max-width: 768px) {
-  .container {
-    padding: 2%;
-  }
-
-  .firstlook {
-    padding: 5%;
-  }
-
-  h1,
-  h2 {
-    padding: 1em auto;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .container {
-    padding: 1%;
-  }
-
-  .firstlook {
-    padding: 3%;
-  }
-
-  h1,
-  h2 {
-    padding: 0.5em auto;
   }
 }

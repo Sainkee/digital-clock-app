@@ -38,8 +38,6 @@ function start() {
     updateStopwatch();
   }, 10);
   isStopwatchOn = true;
-
-  console.log("started");
 }
 
 function stop() {
@@ -48,7 +46,7 @@ function stop() {
   } else {
     clearInterval(stopwatchTimer);
     isStopwatchOn = false;
-    console.log("stopped");
+    // console.log("stopped");
   }
 }
 
